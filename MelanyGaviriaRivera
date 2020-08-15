@@ -1,0 +1,47 @@
+# Quiz condicionales
+
+## EJERCICIO 1
+"""
+
+por= float(input("Porcentaje de interés:\n"))
+cap= int(input("Capital:\n"))
+if(cap*por > 7000):
+  cap+= cap*por
+print("Capital final: $%d" %cap)
+
+"""## EJERCICIO 2"""
+
+prom= int(input("Nota 1:\n"))
+prom+= int(input("Nota 2:\n"))
+prom+= int(input("Nota 3:\n"))
+if (prom/3 >= 70):
+  print("Alumno aprobado.")
+else:
+  print("Alumno reprobado.")
+
+"""## EJERCICIO 3"""
+
+valor= int(input("Valor de la compra:\n"))
+if valor>1000:
+  valor *= 0.8
+print("Valor a pagar: $%d" %valor)
+
+"""## EJERCICIO 4"""
+
+h= int(input("Horas trabajadas:\n"))
+pago=0
+if h>40: # solo horas extras
+  pago+= (h-40)*20 
+  h=40
+pago += h*16 #horas basicas
+print("Pago: $%d" %pago)
+
+"""## EJERCICIO 6"""
+
+x= int(input("Numero 1:\n"))
+y= int(input("Numero 2:\n"))
+if (x>y):
+  print(y,x)
+else:
+  print(x,y)
+
